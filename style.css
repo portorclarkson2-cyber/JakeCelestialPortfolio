@@ -3111,3 +3111,61 @@ body.modal-open {
 
 }
 
+
+/* =========================================================
+   MOCK INTERVIEW SECTION
+========================================================= */
+
+.interview-card {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 30px;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.interview-video {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #07111f;
+  aspect-ratio: 16 / 9;
+}
+
+.interview-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.interview-info {
+  padding: 10px 0;
+}
+
+.interview-info > small {
+  color: #729cff;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.interview-info h3 {
+  margin: 14px 0;
+  font-size: 1.8rem;
+}
+
+.interview-info p {
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .interview-card {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .interview-info h3 {
+    font-size: 1.5rem;
+  }
+}
